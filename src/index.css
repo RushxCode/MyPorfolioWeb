@@ -31,39 +31,69 @@ button {
 }
 /* Navbar */
 
+/* Premium Navbar */
+
 .navbar {
-  background: #0f172a;
+  background: rgba(15, 23, 42, 0.96);
   color: white;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .nav-content {
-  min-height: 70px;
+  min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-links a {
-  color: white;
+  position: relative;
+  padding: 10px 14px;
+  color: #e2e8f0;
   font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.25s ease, background 0.25s ease;
 }
 
 .nav-links a:hover {
   color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
 }
 
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 5px;
+  height: 2px;
+  background: #38bdf8;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
 
 /* Hero */
 
@@ -897,5 +927,47 @@ button {
     bottom: 18px;
     width: 42px;
     height: 42px;
+  }
+}
+/* Hero Social Icons - Final */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #000000;
+  opacity: 0.65;
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .social-links {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .social-links svg {
+    width: 18px;
+    height: 18px;
   }
 }
