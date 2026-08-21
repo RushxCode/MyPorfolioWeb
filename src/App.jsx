@@ -374,7 +374,7 @@ const scrollToTop = () => {
 
       {/* Instagram */}
       <a
-        href="https://www.instagram.com/rushikesh_61/"
+        href="https://www.instagram.com/rushikesh_potphode09"
         target="_blank"
         rel="noreferrer"
         className="contact-card"
