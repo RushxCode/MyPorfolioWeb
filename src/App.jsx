@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import profilePhoto from './assets/Profile.jpg';
 import smartVillageImage from './assets/smart-village.png';
-import portfolioImage from './assets/portfolio.png';
+import portfolioImage from './assets/Portfolio.png';
 
 import {
   FaGithub,
