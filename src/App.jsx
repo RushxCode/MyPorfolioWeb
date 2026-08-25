@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import profilePhoto from './assets/Profile.jpg';
 import smartVillageImage from './assets/smart-village.png';
+import portfolioImage from './assets/portfolio.png';
 
 import {
   FaGithub,
@@ -284,9 +285,11 @@ const scrollToTop = () => {
       {/* My Portfolio */}
       <div className="project-card">
 
-        <div className="project-placeholder">
-          My Portfolio
-        </div>
+        <img
+         src={portfolioImage}
+         alt="My Portfolio Project"
+         className="project-image"
+        />
 
         <div className="project-content">
 
